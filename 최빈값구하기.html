@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const array = [1, 2, 3, 3, 3, 4];
+        const array = [3, 1, 2, 3, 4, 3];
+
+        function solution(array) {
+            // const temp = [];
+            // for(let i=0; i<array.length; i++){
+            //     if(temp.indexOf(array[i]) === -1){
+            //         temp.push(array[i]);
+            //     }
+            // }
+            // console.log(temp);
+
+            // var result = {};
+            // for(let i=0; i<temp.length; i++){
+            //     var cnt = 0;
+            //     for(let j=0; j<array.length; j++){
+            //         if(temp[i] === array[j]){ //3
+            //             cnt++;
+            //         }
+            //     }
+
+            //     result[temp[i]] = cnt;
+            // }
+
+            // console.log(result);
+            // old version
+
+
+            // new version
+            let set = new Set(array);
+            let map = new Map();
+            for(let number of set){
+                const cnt = array.filter(n => n===number).length;
+                map.set(number, cnt);
+            }
+
+            console.log(map);
+            let max = 0;
+            for(let i=0; i<map.length; i++){
+                console.log(map[i]);
+            }
+
+
+
+
+        }
+        console.log(solution(array));
+    </script>
+</body>
+
+</html>
