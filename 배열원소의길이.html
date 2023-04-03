@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            const strlist = ["We", "are", "the", "world!"];
+
+            function solution(strlist) {
+                let answer = [];
+                for(let i=0; i < strlist.length; i++) {
+                   answer.push(strlist[i].length);
+                }
+                return answer;
+            }
+
+            console.log(solution(strlist));
+
+            function new_solution(list){
+                // return list.map(str => str.length)
+
+                // return list.map(function(str){
+                //     return str.length
+                // })
+            }
+
+
+            function sum(a, b){
+                return a + b;
+            }
+            console.log(sum(5,10));
+
+            // const sum2 = (a, b) => {
+            //     return a+b;
+            // }
+            // const sum2 = (a,b) => a+b;
+
+            const sum3 = a => a+10
+
+            
+            console.log(sum3(5));
+
+
+    </script>
+</body>
+</html>
