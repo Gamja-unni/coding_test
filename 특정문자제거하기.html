@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function () {
+            /* 문자열인 경우 */
+            const my_string = "BCBdbe";
+            const letter = "B";
+
+            function solution(my_string, letter) {
+                // let answer = "";
+                // for(let i=0; i<my_string.length; i++) {
+                //     answer = my_string.replaceAll(letter, "")
+                // }
+                return my_string.replaceAll(letter, "");
+            }
+
+            /* 배열인 경우 */
+            // const my_string = ["B", "C", "B", "d", "b", "e"];
+            // const letter = "B";
+
+            // function solution(my_string, letter) {
+            //     for(let i=0; i<my_string.length; i++) {
+            //         if(my_string[i] === letter){
+            //             my_string.splice(i, 1)
+            //         }
+            //     }
+            //     return my_string;
+            // }
+
+            console.log(solution(my_string, letter));
+        })();
+    </script>
+</body>
+</html>
