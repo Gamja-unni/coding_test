@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        (function () {
+            const my_string = "jaron";
+
+            function solution(my_string) {
+                var answer = '';
+
+                for(let i=my_string.length-1; i>=0; i--) {
+                    answer += my_string.charAt(i)
+                }
+                return answer;
+            }
+
+            /* 전개연산자로 문자열을 배열화 시킴 */
+            // return [...my_string].reverse().join("")
+            
+            /* split()을 통해 문자열을 배열화 시킴 */
+            // return my_string.split("").reverse().join("")
+
+            console.log(solution(my_string));
+        })();
+    </script>
+</body>
+
+</html>
