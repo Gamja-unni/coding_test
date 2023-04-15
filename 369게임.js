@@ -15,5 +15,5 @@
         }
     }
 
-    console.log(solution('4 6 8 3'));
+    console.log(solution('2 2 2 2'));
 })();
