@@ -4,11 +4,6 @@ function solution(num_list, n) {
         if (i % n === 0) {
             answer.push(num_list[i]);
         }
-        // answer.push(num_list[0]);
-        // answer.push(num_list[n]);
-        // // if (n > num_list.length) {
-        // answer.push(num_list[n * n]);
-        // // }
     }
     return answer;
 }
