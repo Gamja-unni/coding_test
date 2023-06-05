@@ -4,13 +4,16 @@
 아직 마치지 못한 일들을 순서대로 담은 문자열 배열을 return 하는 solution 함수를 작성해 주세요.
 */
 function solution(todo_list, finished) {
-    const arr = [];
-    for (let i = 0; i < finished.length; i++) {
-        if (finished[i] === false) {
-            arr.push(todo_list[i]);
-        }
-    }
-    return arr;
+    // const arr = [];
+    // for (let i = 0; i < finished.length; i++) {
+    //     if (finished[i] === false) {
+    //         arr.push(todo_list[i]);
+    //     }
+    // }
+    // return arr;
+
+    /* filter 추가 */
+    return todo_list.filter((x, i) => (!finished[i] ? x : false));
 }
 console.log(
     solution(
