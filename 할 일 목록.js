@@ -13,7 +13,7 @@ function solution(todo_list, finished) {
     // return arr;
 
     /* filter 추가 */
-    return todo_list.filter((x, i) => (!finished[i] ? x : false));
+    return todo_list.filter((x, i) => (!finished[i] ? x : null));
 }
 console.log(
     solution(
