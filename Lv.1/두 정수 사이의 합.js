@@ -5,23 +5,19 @@
 */
 
 function solution(a, b) {
-    let arr = [];
+    let sum = 0;
     if (a === b) return a;
     if (a < b) {
-        let sum1 = 0;
         for (let i = a; i <= b; i++) {
-            arr.push(i);
-            sum1 = arr.reduce((v, c) => v + c, 0);
+            sum += i;
         }
-        return sum1;
+        return sum;
     }
     if (a > b) {
-        let sum2 = 0;
         for (let i = b; i <= a; i++) {
-            arr.push(i);
-            sum2 = arr.reduce((v, c) => v + c, 0);
+            sum += i;
         }
-        return sum2;
+        return sum;
     }
 }
 
