@@ -7,18 +7,9 @@
 */
 
 function solution(date1, date2) {
-    const dateStr1 = Number(date1.join(""));
-    const dateStr2 = Number(date2.join(""));
-
-    console.log(dateStr1 - dateStr2);
-
-    if (dateStr1 === dateStr2) return 0;
-    if (dateStr1 !== dateStr2) return 1;
+    const dateStr1 = new Date(...date1);
+    const dateStr2 = new Date(...date2);
+    return dateStr1 >= dateStr2 ? 0 : 1;
 }
-
-// {
-//     if (dateStr1 > dateStr2) return dateStr1 - dateStr2;
-//     if (dateStr1 < dateStr2) return dateStr2 - dateStr1;
-// }
 
 console.log(solution([2021, 12, 28], [2021, 12, 29]));
