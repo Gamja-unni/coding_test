@@ -8,13 +8,9 @@ queries의 원소는 각각 하나의 query를 나타내며, [s, e] 꼴입니다
 */
 
 function solution(arr, queries) {
-    for (let i = 0; i < queries.length; i++) {
-        for (let j = 0; j <= queries[i].length; j++) {
-            if (queries[i][j]) {
-                arr[i] += 1;
-            }
-        }
-    }
+    queries.forEach((q) => {
+        arr = arr.map((x, i) => (i >= q[0] && i <= q[1] ? x + 1 : x));
+    });
     return arr;
 }
 
